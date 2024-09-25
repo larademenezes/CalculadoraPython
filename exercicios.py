@@ -174,11 +174,50 @@ class Exercicios:
                 impares += f'\n{i * 3 + 1}'
         return f"A sequência de Collatz é: {pares} e\n {impares} "
 
+    def exercicio19(self, num):
+        par = 0
+        impar = 0
+        for i in range(1, num, 1):
+            if i % 2 == 0:
+                par += i
+            elif i % 2 == 1:
+                impar += i
+        return f'Os pares são: {par} e os impares são: {impar}'
 
+    def exercicio20(self,num):
+        soma = 0
+        for i in range(1, num):
+            if num % i == 0:
+                soma += i
 
+        if soma == num:
+            return f'O número é perfeito: '
+        else:
+            return f'O número não é perfeito: '
 
+    def exercicio21(self):
+        valorA = 10
+        valorB = 20
+        valor = valorA
+        valorA = valorB
+        valorB = valor
+        return f'Os valores são: {valorA} e {valorB}'
 
+    def exercicio22(self,num):
+        num = 0
+        for i in range(1,9):
+            num = i - 1
+        return num
 
+    def exercicio23(self, base, altura):
+        retangulo = base * altura
+        return f'A area do triangulo é: {retangulo}'
+
+    def exercicio24(self,ano, meses, dias):
+        return ano * 365 + meses * 30 + dias
+
+    def exercicio25(self, eleitores,brancos,nulos,validos):
+        return eleitores % 100 + brancos % 100 + nulos % 100 + validos % 100
 
 
 

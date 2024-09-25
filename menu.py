@@ -36,7 +36,13 @@ class Menu:
               '\n23 Exercicio 16'               +
               '\n24 Exercicio 17'               +
               '\n25 Exercicio 18'               +
-              '\n26 Exercicio 19')
+              '\n26 Exercicio 19'               +
+              '\n27 Exercicio 20'               +
+              '\n28 Exercicio 21'               +
+              '\n29 Exercicio 22'               +
+              '\n30 Exercicio 23'               +
+              '\n31 Exercicio 24'               +
+              '\n32 Exercicio 25')
 
     def coletar(self):
         self.num1 = int(input("Informe o primeiro número: "))
@@ -119,5 +125,31 @@ class Menu:
             elif self.opcao == 25:
                 num = int(input("Informe um número: "))
                 print(self.exer.exercicio18(num))
+            elif self.opcao == 26:
+                num = int(input("Informe um número: "))
+                print(self.exer.exercicio19(num))
+            elif self.opcao == 27:
+                num = int(input("Informe um número: "))
+                print(self.exer.exercicio20(num))
+            elif self.opcao == 28:
+                print(self.exer.exercicio21())
+            elif self.opcao == 29:
+                num = int(input("Informe um número"))
+                print(self.exer.exercicio22(num))
+            elif self.opcao == 30:
+                altura = int(input("Informe a altura do triangulo"))
+                base = int(input("Informe a base do triangulo"))
+                print(self.exer.exercicio23(base, altura))
+            elif self.opcao == 31:
+                dias = int(input("Informe o dia: "))
+                meses = int(input("Informe o mês: "))
+                anos = int(input("Informe o ano: "))
+                print(self.exer.exercicio24(dias,meses,anos))
+            elif self.opcao == 32:
+                eleitores = int(input("Informe o número de eleitores: "))
+                brancos = int(input("Informe o número de votos em brancos: "))
+                nulos = int(input("Informe o número de votos nulos: "))
+                validos = int(input("Informe o número de votos validos: "))
+                print(self.exer.exercicio25(eleitores, brancos, nulos, validos))
             else:
                 print("Codigo escolhido não é valído!")
